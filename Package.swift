@@ -11,11 +11,9 @@ let package = Package(
       targets: ["mlx_embeddings"])
   ],
   dependencies: [
-    .package(url: "https://github.com/ml-explore/mlx-swift", .upToNextMinor(from: "0.25.4")),
-    .package(
-        url: "https://github.com/huggingface/swift-transformers", .upToNextMinor(from: "0.1.21")
-    ),
-    .package(url: "https://github.com/ml-explore/mlx-swift-examples/", branch: "main"),
+    .package(url: "https://github.com/ml-explore/mlx-swift", exact: "0.25.5"),
+    .package(url: "https://github.com/huggingface/swift-transformers", exact: "0.1.22"),
+    .package(url: "https://github.com/ml-explore/mlx-swift-examples", exact: "0.25.6"),
 
   ],
   targets: [
